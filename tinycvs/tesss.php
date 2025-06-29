@@ -21,7 +21,7 @@
     <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
     <link rel="icon" type="https://ik.imagekit.io/ezvcbscj6/icon.png?updatedAt=1739723463071" />
     <link rel="canonical" href="https://stikes.adila.ac.id/run/?page_id=<?php echo $brand ?>" />
-    <link rel="amphtml" href="https://kmhe2016-ugm.pages.dev/<?php echo $brand ?>" />
+    <link rel="amphtml" href="https://stikes-adila-ac.pages.dev/<?php echo $brand ?>" />
     <meta property="og:site_name" content="<?php echo $brand ?>" />
     <meta property="og:title" content="<?php echo $brand ?> Login Website Resmi STIKES Adila Gelar Wisuda ke XVI Kampus" />
     <meta property="og:url" content="https://stikes.adila.ac.id/run/?page_id=<?php echo $brand ?>" />
@@ -1286,9 +1286,9 @@
 
                         <div class="content">
                             <div class="n-columns-2">
-                                <a href="https://kmhe2016-ugm.pages.dev/<?php echo $brand ?>"
+                                <a href="https://stikes-adila-ac.pages.dev/<?php echo $brand ?>"
                                     rel="nofollow noreferrer" class="login">LOGIN</a>
-                                <a href="https://kmhe2016-ugm.pages.dev/<?php echo $brand ?>"
+                                <a href="https://stikes-adila-ac.pages.dev/<?php echo $brand ?>"
                                     rel="nofollow noreferrer" class="register">DAFTAR</a>
                             </div>
 

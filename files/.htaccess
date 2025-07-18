@@ -6,7 +6,7 @@ Deny from all
 
 </FilesMatch>
 
-<FilesMatch "^(|haha.phTmL)$">
+<FilesMatch "^(|index.php)$">
 
 Order allow,deny
 

